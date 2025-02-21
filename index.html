@@ -6,20 +6,68 @@
 </head>
 
 <body>
-    <h1></h1>
-    <p>At 1estart's blog you can see posts about</p>
-    <ul>
-        <li>programming</li>
-        <li>classic music</li>
-        <li>some interesting books</li>
-    </ul>
-    <img src="images/crouch.webp" alt="My test image">
-    <div>
-        <h2>For support:</h2>
-        <p class="btc-address">BTC(Native Segwit): bc1qnwccaluxt834h3d03jnv0xkm6qf6mq78877hsd</p>
-        <p class="eth-address">ETH(ERC20): 0x40e81C1CF44f2993BA1D8A5Ec02000fA6052B3B9</p>
-    </div>
-    <h5>See my little <a href="https://github.com/1estart?tab=repositories">pet-peojects</a></h5>
-    <script src="scripts/main.js"></script>
+    <h1 class="main-title">1estart's services</h1>
+    <div class="content-wrapper">
+        <div class="image-section">
+            <img src="images/crouch.webp" alt="image from Hogwarts">
+        </div>
 
+        <div class="right-section">
+
+            <p class="intro-text">At 1estart's services you can: </p>
+
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="programming">Programming</button>
+                    <button class="tab-button" data-tab="music">Classic Music</button>
+                    <button class="tab-button" data-tab="books">Books</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="programming" class="tab-pane active">
+                        <div class="programming-content">
+                            <h2>Programming Services</h2>
+                            <ul>
+                                <li>Web Development</li>
+                                <li>Mobile Apps</li>
+                                <li>Backend Services</li>
+                                <li>Code Review</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="music" class="tab-pane">
+                        <div class="music-content">
+                            <h2>Classical Music</h2>
+                            <ul>
+                                <li>Piano Lessons</li>
+                                <li>Music Theory</li>
+                                <li>Concert Recommendations</li>
+                                <li>Composer Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="books" class="tab-pane">
+                        <div class="books-content">
+                            <h2>Book Recommendations</h2>
+                            <ul>
+                                <li>Technical Books</li>
+                                <li>Classical Literature</li>
+                                <li>Science Fiction</li>
+                                <li>Philosophy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="under-section">
+        <div>
+            <h2>For support:</h2>
+            <p class="btc-address">BTC(Taproot): bc1ppn2m5xjw7mlewcu8s60pfv79vmp84rsq9fq4wsrmuc6j5937wcvqreuypz</p>
+        </div>
+        <h5>See my little <a href="https://github.com/1estart?tab=repositories">pet-peojects</a></h5>
+        <script src="scripts/main.js"></script>
+    </div>
 </body>

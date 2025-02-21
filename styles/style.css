@@ -21,3 +21,154 @@ li {
 .eth-address {
     text-indent: 15px;
 }
+
+.main-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Main content layout */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Image section */
+.image-section {
+    max-width: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Right section with text and tabs */
+.right-section {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 20px;
+}
+
+.intro-text {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+img {
+    max-width: 300px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.tabs-container {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 20px;
+}
+
+.tabs-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #f0f0f0;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .tabs-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Under section styling */
+.under-section {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.under-section>div {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.under-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Responsive design for under-section */
+@media (max-width: 768px) {
+    .under-section {
+        flex-direction: column;
+    }
+
+    .under-section>div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
