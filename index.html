@@ -1,71 +1,46 @@
+---
+---
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1estart</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
-
 <body>
-    <h1 class="main-title">1estart's services</h1>
-    <div class="content-wrapper">
-        <div class="image-section">
-            <img src="images/crouch.webp" alt="image from Hogwarts">
-        </div>
+<main>
+    <img class="avatar" src="/images/me.webp" alt="Artemiy">
+    <h1>Artemiy · 1estart</h1>
+    <p class="bio">Software developer. Rust, backend, Bitcoin.</p>
+    <p><a href="https://github.com/1estart">GitHub →</a></p>
 
-        <div class="right-section">
+    <h2>What I do</h2>
+    <ul>
+        <li>🎵 Music — flute streams</li>
+        <li>⚙️ Engineering</li>
+        <li>🦀 Rust projects: Bitcoin, Lightning, CLI tooling</li>
+    </ul>
 
-            <p class="intro-text">At 1estart's services you can: </p>
+    <h2>Blog</h2>
+    <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+            <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 
-            <div class="tabs-container">
-                <div class="tabs">
-                    <button class="tab-button active" data-tab="programming">Programming</button>
-                    <button class="tab-button" data-tab="music">Classic Music</button>
-                    <button class="tab-button" data-tab="books">Books</button>
-                </div>
-
-                <div class="tab-content">
-                    <div id="programming" class="tab-pane active">
-                        <div class="programming-content">
-                            <h2>Programming Services</h2>
-                            <ul>
-                                <li>Web Development</li>
-                                <li>Mobile Apps</li>
-                                <li>Backend Services</li>
-                                <li>Code Review</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="music" class="tab-pane">
-                        <div class="music-content">
-                            <h2>Classical Music</h2>
-                            <ul>
-                                <li>Piano Lessons</li>
-                                <li>Music Theory</li>
-                                <li>Concert Recommendations</li>
-                                <li>Composer Analysis</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="books" class="tab-pane">
-                        <div class="books-content">
-                            <h2>Book Recommendations</h2>
-                            <ul>
-                                <li>Technical Books</li>
-                                <li>Classical Literature</li>
-                                <li>Science Fiction</li>
-                                <li>Philosophy</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="under-section">
-        
-        <h5>📖 Read my <a href="/tech_blog">tech blog</a></h5>
-        <h5>🐙 See my little <a href="https://github.com/1estart?tab=repositories">pet-projects</a></h5>
-        
-        <script src="scripts/main.js"></script>
-    </div>
+    <h2>Support</h2>
+    <a href="bitcoin:bc1qdwmj4g6x96zm3jst5creryn4459kem9x7lkddr">
+        <img class="qr" src="/images/btc-qr.webp" alt="Bitcoin donation QR code">
+    </a>
+    <code class="address" id="btc-address">bc1qdwmj4g6x96zm3jst5creryn4459kem9x7lkddr</code>
+    <button class="copy-btn"
+        onclick="navigator.clipboard.writeText(document.getElementById('btc-address').textContent)">
+        Copy address
+    </button>
+</main>
 </body>
+</html>

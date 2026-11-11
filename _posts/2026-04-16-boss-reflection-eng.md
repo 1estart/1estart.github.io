@@ -1,0 +1,20 @@
+---
+layout: post
+title: Reflections after BOSS
+---
+Reflections After BOSS: Focus, Open-Source, and the Truth About Grants
+(BOSS — Bitcoin Open Source Software Challenge — https://bosschallenge.xyz/)
+
+Getting into the BOSS program turned out to be easier than seeing it through to a logical conclusion. That's not just what the organizers say — it's the reality for anyone who's ever tried to break into open-source via grants. The main secret repeated on every Zoom call? Focus. And it really does make the difference.
+
+From the very first call, it was clear: this wasn't a local story. Around 200 participants from all over the world — Africa, China, India, Europe. Different time zones, different backgrounds, but one shared goal. There was even an example of a father of two who managed to complete the journey and earn support. Inspiring? Absolutely. But it also forced me to honestly assess my own resources.
+
+Stage One involved roughly six assignments focused on the Bitcoin ecosystem. It started with introductory tasks: setting up signet and Lightning nodes, getting familiar with Bitcoin's codebase. Then came the "heavy" part: cryptography, network specifics, onion routing. What stuck with me most was how onion packets are assembled: the process is non-trivial, and the slightest error in a single byte can completely change the outcome. But that's by design — Bitcoin doesn't forgive superficial engagement. I'll be honest: without AI assistance, I wouldn't have made it. So I ran LLMs in parallel, re-read code and BIP documents, trying not just to copy-paste, but to truly understand the mechanics.
+
+Stage Two kicked off on February 12 and required either a portfolio project or participation in partner programs. I picked up dust_filter and joined the code_dojo and mastering taproot partner initiatives. My friend Vadim helped me locate a dust_filter issue in BDK, but I knew from the start: with my current experience level, building a serious feature in two months wasn't realistic. So I focused on what I could actually deliver: documentation, licenses, README files, development workflows. Small stuff? Sure. But these are often the very things that slow projects down and discourage new contributors.
+
+The final meeting took place on April 15. Just like at the start, there were motivational speeches: "It's hard, but you can do it." Those who stood out received direct guidance on applying for grants. But the question on many participants' minds remained unanswered: "So what's the actual outcome? What's the real goal of this program?" Organizers responded vaguely: "You manage your own time — do it on your own." Formally, that's part of any challenge. But if a program positions itself as a springboard, why not clarify its objectives, even in broad terms? Maybe that's the point: they're looking for people who enter open-source not for grants, but to move the Bitcoin community forward. Self-starters. People comfortable with ambiguity.
+
+At the same time, I see another reality. Many who are passionate about open-source simply can't afford to leave their 9-to-5 jobs. Without a stable income, there's neither time nor energy to dive deep into the ecosystem. I don't know if I'm inventing this problem or describing a systemic barrier. But one thing is certain: everything is possible. You just have to truly commit — or, as some gamers put it, "put in the sweat." Focus, embrace uncertainty as part of the journey, and keep writing code, reading documentation, and asking questions. Even if AI is nudging you along and you're reading BIPs late at night. Open-source doesn't wait for the perfect. It waits for those who don't stop.
+
+And most importantly: the path to one of the most rewarding ways to work in the world has become clearer. You find an area that genuinely interests you, hold yourself to a high standard while learning what it takes to be useful there, communicate actively, and collaborate. As your contributions grow, so do your chances of earning a grant — and with it, the freedom to stop juggling side gigs and focus entirely on what matters.

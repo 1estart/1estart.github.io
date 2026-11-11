@@ -1,174 +1,49 @@
-html {
-    font-size: 14px;
-    /* px means "pixels": the base font size is now 14 pixels high  */
-    font-family: "Open Sans", sans-serif;
-    /* this should be the rest of the output you got from Google fonts */
-}
-
-h5 {
-    font-size: 20px;
-    text-align: center;
-}
-
-p,
-li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-}
-
-.btc-address,
-.eth-address {
-    text-indent: 15px;
-}
-
-.main-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2em;
-    color: #333;
-}
-
-/* Main content layout */
-.content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Image section */
-.image-section {
-    max-width: 300px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Right section with text and tabs */
-.right-section {
-    flex: 1;
-    min-width: 300px;
-    margin-left: 20px;
-}
-
-.intro-text {
-    margin-bottom: 30px;
-    line-height: 1.6;
-    color: #333;
-}
-
 body {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    margin: 0;
+    background: #f6f2ea;
+    color: #2b2b2b;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
 }
-
-img {
-    max-width: 300px;
-    /* Adjust size as needed */
-    height: auto;
+main, article { max-width: 620px; margin: 48px auto; padding: 0 20px; }
+article { max-width: 680px; font-size: 17px; line-height: 1.7; }
+.avatar { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; }
+h1 { font-size: 26px; margin: 16px 0 4px; }
+article h1 { font-size: 28px; margin-bottom: 4px; }
+h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8a8378;
+    margin: 36px 0 12px;
 }
+a { color: #2b5aa0; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { margin: 6px 0; }
+.bio { margin: 0 0 8px; color: #555; }
+.date { color: #8a8378; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.posts li { display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px solid #e5dfd3; }
 
-.tabs-container {
-    flex: 1;
-    min-width: 300px;
-    margin-left: 20px;
-}
-
-.tabs-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-.tabs {
-    display: flex;
-    border-bottom: 1px solid #ccc;
-}
-
-.tab-button {
-    padding: 10px 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.tab-button:hover {
-    background-color: #f0f0f0;
-}
-
-.tab-button.active {
-    border-bottom: 2px solid #007bff;
-    color: #007bff;
-}
-
-.tab-content {
-    padding: 20px;
-}
-
-.tab-pane {
-    display: none;
-}
-
-.tab-pane.active {
+/* support */
+.qr { width: 160px; height: 160px; display: block; margin-bottom: 10px; }
+.address {
     display: block;
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+    word-break: break-all;
+    background: #efe9dd;
+    padding: 8px 10px;
+    border-radius: 6px;
 }
-
-/* Make it responsive */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-
-    .tabs-container {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    img {
-        width: 100%;
-        max-width: 100%;
-    }
+.copy-btn {
+    margin-top: 8px;
+    padding: 6px 14px;
+    border: 1px solid #d8d2c4;
+    border-radius: 6px;
+    background: #fff;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
 }
-
-/* Under section styling */
-.under-section {
-    width: 100%;
-    margin-top: 40px;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.under-section>div {
-    flex: 1;
-    min-width: 300px;
-    padding: 20px;
-}
-
-.under-section h2 {
-    margin-bottom: 15px;
-    color: #333;
-}
-
-/* Responsive design for under-section */
-@media (max-width: 768px) {
-    .under-section {
-        flex-direction: column;
-    }
-
-    .under-section>div {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
+.copy-btn:hover { background: #f0ebe0; }
